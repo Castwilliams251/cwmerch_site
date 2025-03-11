@@ -5,7 +5,7 @@
   \"display\": \"standalone\",
   \"background_color\": \"#ffffff\",
   \"theme_color\": \"#000000\",
-  \"description\": \"An interactive AI chatbot experience\",
+  \"description\": \"An interactive AI chatbot experience like no other!\",
   \"icons\": [
     {
       \"src\": \"/static/img/android-chrome-192x192.png\",
@@ -16,4 +16,6 @@
       \"src\": \"/static/img/android-chrome-512x512.png\",
       \"sizes\": \"512x512\",
       \"type\": \"image/png\"
-  
+    }
+  ]
+}
