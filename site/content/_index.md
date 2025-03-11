@@ -1,7 +1,7 @@
 ---
 title: \"Meet Your New Favorite AI Entertainer!\"
 subtitle: \"An AI so engaging, you'll forget it's a bot! Ready to chat, joke, and entertain?\"
-image: /img/home-jumbotron.jpg
+image: \"/img/home-jumbotron.jpg\"
 
 blurb:
   heading: \"Why Our AI?\"
@@ -12,10 +12,10 @@ intro:
   text: \"This isn't just another website—this is a digital experience! Our AI is designed to interact dynamically, adapt to conversations, and keep things fun, engaging, and unpredictable. No scripts, just pure AI-powered entertainment.\"
 
 products:
-  - image: /img/ai-avatar.svg
+  - image: \"/img/ai-avatar.svg\"
     text: \"Our AI doesn’t just answer questions—it creates experiences. Whether you need a virtual companion, a game partner, or someone to challenge your thoughts, it's got you covered!\"
 
-  - image: /img/interactive-chat.svg
+  - image: \"/img/interactive-chat.svg\"
     text: \"Jump into an interactive chat and see for yourself. Test its wit, explore different moods, and let it surprise you. Ready for a new kind of conversation?\"
 
 values:
@@ -27,4 +27,4 @@ call_to_action:
   text: \"Click below and let the AI show you what it's capable of. Just one conversation, and you’ll be hooked!\"
   button_text: \"Chat Now\"
   button_link: \"/chat\"
-  ---
+---
