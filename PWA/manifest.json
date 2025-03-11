@@ -1,21 +1,21 @@
 {
-  \"name\": \"C.W Merch AI Experience\",
-  \"short_name\": \"C.W AI\",
-  \"start_url\": \"/\",
-  \"display\": \"standalone\",
-  \"background_color\": \"#ffffff\",
-  \"theme_color\": \"#000000\",
-  \"description\": \"An interactive AI chatbot experience like no other!\",
-  \"icons\": [
+  "name": "C.W Merch AI Experience",
+  "short_name": "C.W AI",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "description": "An interactive AI chatbot experience like no other!",
+  "icons": [
     {
-      \"src\": \"/pwa/icon-192x192.png\",
-      \"sizes\": \"192x192\",
-      \"type\": \"image/png\"
+      "src": "/pwa/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      \"src\": \"/pwa/icon-512x512.png\",
-      \"sizes\": \"512x512\",
-      \"type\": \"image/png\"
+      "src": "/pwa/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }
