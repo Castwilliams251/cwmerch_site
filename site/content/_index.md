@@ -27,3 +27,4 @@ call_to_action:
   text: \"Click below and let the AI show you what it's capable of. Just one conversation, and you’ll be hooked!\"
   button_text: \"Chat Now\"
   button_link: \"/chat\"
+  ---
