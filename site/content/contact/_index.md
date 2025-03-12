@@ -1,15 +1,14 @@
 ---
-title: \"Contact\"
-logo: \"/img/logo.svg\"
+title: "Contact"
+logo: "/img/logo.svg"
 contact_entries:
   - heading: Location
-    text: \"Custom Website Merch, Online Business\"
+    text: "Custom Website Merch, Online Business"
   - heading: Working hours
-    text: \"Monday – Saturday: 9AM – 7PM. Closed on Sundays\"
+    text: "Monday – Saturday: 9AM – 7PM. Closed on Sundays"
   - heading: Email
-    text: \"cwmerch99@gmail.com\"
+    text: "cwmerch99@gmail.com"
 ---
-
 <h3 class=\"f4 b lh-title mb2\">Get in Touch</h3>
 
 <p>We’d love to hear from you! Whether you have questions about our AI-powered solutions, need assistance with customization, or want to explore new features, we’re here to help.</p>
