@@ -1,96 +1,74 @@
 ---
-title: Our Coffee
+title: "Meet Your AI Companion"
 type: products
 image: /img/products-jumbotron.jpg
+
 intro:
-  heading: What we offer
+  heading: "What We Offer"
   description: >-
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee production,
-    roasting and brewing seriously and we’re glad to pass that knowledge to
-    anyone.
+    Welcome to the future of interactive AI! Our advanced chatbot is designed to engage, entertain, and assist with anything you need. Whether you're looking for deep conversations, productivity tools, or just some fun, our AI adapts to your needs seamlessly.
   blurbs:
-    - image: /img/illustrations-coffee.svg
-      text: >
-        We sell green and roasted coffee beans that are sourced directly from
-        independent farmers and farm cooperatives. We’re proud to offer a
-        variety of coffee beans grown with great care for the environment and
-        local communities. Check our post or contact us directly for current
-        availability.
-    - image: /img/illustrations-coffee-gear.svg
-      text: >
-        We offer a small, but carefully curated selection of brewing gear and
-        tools for every taste and experience level. No matter if you roast your
-        own beans or just bought your first french press, you’ll find a gadget
-        to fall in love with in our shop.
-    - image: /img/illustrations-tutorials.svg
-      text: >
-        Love a great cup of coffee, but never knew how to make one? Bought a
-        fancy new Chemex but have no clue how to use it? Don't worry, we’re here
-        to help. You can schedule a custom 1-on-1 consultation with our baristas
-        to learn anything you want to know about coffee roasting and brewing.
-        Email us or call the store for details.
-    - image: /img/illustrations-meeting-space.svg
-      text: >
-        We believe that good coffee has the power to bring people together.
-        That’s why we decided to turn a corner of our shop into a cozy meeting
-        space where you can hang out with fellow coffee lovers and learn about
-        coffee making techniques. All of the artwork on display there is for
-        sale. The full price you pay goes to the artist.
+    - image: /img/ai-avatar.svg
+      text: >-
+        Experience a dynamic AI companion that learns and evolves with you. From casual chats to in-depth discussions, our AI is built to provide a personalized and engaging experience.
+    - image: /img/interactive-chat.svg
+      text: >-
+        Connect with an AI that adapts to your mood, style, and interests. It’s more than just a chatbot—it’s your digital assistant, entertainment hub, and problem solver in one.
+    - image: /img/ai-tools.svg
+      text: >-
+        Utilize AI-powered tools for productivity, creative brainstorming, and personalized recommendations. The possibilities are endless!
+    - image: /img/ai-community.svg
+      text: >-
+        Join a growing community of AI enthusiasts and see how artificial intelligence can enhance your digital experience.
+
 main:
-  heading: Great coffee with no compromises
-  description: >
-    We hold our coffee to the highest standards from the shrub to the cup.
-    That’s why we’re meticulous and transparent about each step of the coffee’s
-    journey. We personally visit each farm to make sure the conditions are
-    optimal for the plants, farmers and the local environment.
-  image1:
-    alt: A close-up of a paper filter filled with ground coffee
-    image: /img/products-grid3.jpg
-  image2:
-    alt: A green cup of a coffee on a wooden table
-    image: /img/products-grid2.jpg
-  image3:
-    alt: Coffee beans
-    image: /img/products-grid1.jpg
-testimonials:
-  - author: Elisabeth Kaurismäki
-    quote: >-
-      The first time I tried Kaldi’s coffee, I couldn’t even believe that was
-      the same thing I’ve been drinking every morning.
-  - author: Philipp Trommler
-    quote: >-
-      Kaldi is the place to go if you want the best quality coffee. I love their
-      stance on empowering farmers and transparency.
-full_image: /img/products-full-width.jpg
-pricing:
-  heading: Monthly subscriptions
+  heading: "The AI That Thinks With You"
   description: >-
-    We make it easy to make great coffee a part of your life. Choose one of our
-    monthly subscription plans to receive great coffee at your doorstep each
-    month. Contact us about more details and payment info.
+    Our AI is built with cutting-edge machine learning models that adapt, respond, and provide dynamic interactions like never before. Whether you need assistance, entertainment, or insights, our chatbot is here to deliver a seamless experience.
+  image1:
+    alt: "AI chatbot engaging in conversation"
+    image: /img/ai-conversation.jpg
+  image2:
+    alt: "AI-generated content and responses"
+    image: /img/ai-generated-content.jpg
+  image3:
+    alt: "Futuristic AI assistant interface"
+    image: /img/ai-interface.jpg
+
+testimonials:
+  - author: "Alex Carter"
+    quote: >-
+      I was blown away by how intuitive and engaging this AI is. It truly feels like talking to a real person!
+  - author: "Jordan Smith"
+    quote: >-
+      This AI assistant has completely changed the way I interact with technology. It’s a must-have!
+
+full_image: /img/ai-full-width.jpg
+
+pricing:
+  heading: "AI Subscription Plans"
+  description: >-
+    Unlock the full potential of our AI with a subscription plan tailored to your needs. Whether you’re a casual user or a power user, we’ve got something for you.
   plans:
-    - description: Perfect for the drinker who likes to enjoy 1-2 cups per day.
+    - description: "Perfect for casual users who want basic AI interactions."
       items:
-        - 3 lbs of coffee per month
-        - Green or roasted beans
-        - One or two varieties of beans
-      plan: Small
-      price: '50'
-    - description: Great for avid drinkers, java-loving couples and bigger crowds
+        - Access to basic AI chat functions
+        - Limited AI-generated content
+        - Standard response time
+      plan: "Basic"
+      price: "$10/month"
+    - description: "Great for those who want an advanced, personalized AI experience."
       items:
-        - 6 lbs of coffee per month
-        - Green or roasted beans
-        - Up to 4 different varieties of beans
-      plan: Big
-      price: '80'
-    - description: Want a few tiny batches from different varieties? Try our custom plan
+        - AI-enhanced conversations
+        - Access to premium AI-generated content
+        - Faster response times and priority access
+      plan: "Pro"
+      price: "$30/month"
+    - description: "For businesses and developers who need AI integration at scale."
       items:
-        - Whatever you need
-        - Green or roasted beans
-        - Unlimited varieties
-      plan: Custom
-      price: '?'
+        - Custom AI solutions
+        - API access for integration
+        - Advanced AI analytics and reporting
+      plan: "Enterprise"
+      price: "Contact for pricing"
 ---
-
-
