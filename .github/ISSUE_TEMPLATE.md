@@ -1,27 +1,64 @@
-<!--
-If you are reporting a new issue, make sure that we do not have any duplicates
-already open. You can ensure this by searching the issue list for this
-repository. If there is a duplicate, please close your issue and add a comment
-to the existing issue instead.
-
-If you suspect your issue is a bug, please edit your issue description to
-include the BUG REPORT INFORMATION shown below. If you fail to provide this
-information within 7 days, we cannot debug your issue and will close it. We
-will, however, reopen it if you later provide the information.
-
----------------------------------------------------
-BUG REPORT INFORMATION
----------------------------------------------------
-Use the commands below to provide key information from your environment:
-You do NOT have to include this information if this is a FEATURE REQUEST
--->
-
-**- Do you want to request a *feature* or report a *bug*?**
-
-**- What is the current behavior?**
-
-**- If the current behavior is a bug, please provide the steps to reproduce.**
-
-**- What is the expected behavior?**
-
-**- Please mention your node.js, NPM, and operating system version.**
+name: Bug Report
+description: File a bug report.
+title: "[Bug]: "
+labels: ["bug", "triage"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: contact
+    attributes:
+      label: Contact Details
+      description: How can we get in touch with you if we need more info?
+      placeholder: ex. email@example.com
+    validations:
+      required: false
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: dropdown
+    id: version
+    attributes:
+      label: Version
+      description: What version of our software are you running?
+      options:
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: What browsers are you seeing the problem on?
+      multiple: true
+      options:
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
