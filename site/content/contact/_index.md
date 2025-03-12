@@ -1,19 +1,19 @@
 ---
-title: "Contact"
-logo: "/img/logo.svg"
+title: \"Contact\"
+logo: \"/img/logo.svg\"
 contact_entries:
   - heading: Location
-    text: "3153 Lynn Avenue, South San Francisco, California 94080"
+    text: \"Custom Website Merch, Online Business\"
   - heading: Working hours
-    text: "Monday – Saturday: 9AM – 7PM We’re closed on Sundays"
+    text: \"Monday – Saturday: 9AM – 7PM. Closed on Sundays\"
+  - heading: Email
+    text: \"cwmerch99@gmail.com\"
 ---
 
-We’d love to get in touch with you and hear your ideas and
-questions. We strive to grow and improve constantly and your feedback
-is valuable for us.
+<h3 class=\"f4 b lh-title mb2\">Get in Touch</h3>
 
-<h3 class="f4 b lh-title mb2">How can I get…?</h3>
+<p>We’d love to hear from you! Whether you have questions about our AI-powered solutions, need assistance with customization, or want to explore new features, we’re here to help.</p>
 
-You can also use the form below for any inquiries about A.I,
-availability, monthly subscriptions and scheduling a 1-on-1 session
-with our very own ChatBot for in depth requests. Don’t be shy, drop us a line!
+<p>For inquiries about AI integration, subscriptions, and one-on-one sessions with Auryn, feel free to reach out. Simply send us an email at <a href=\"mailto:cwmerch99@gmail.com\">cwmerch99@gmail.com</a>, and we’ll get back to you as soon as possible.</p>
+
+<p>Looking forward to connecting with you!</p>
