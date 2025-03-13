@@ -37,19 +37,21 @@ document.addEventListener("DOMContentLoaded", function () {
     appendMessage("bot", "Hello! I'm your AI companion. Ask me anything!");
 
     // Function to handle user input
-    function handleUserMessage() {
+    async function handleUserMessage() {
         let userText = userInput.value.trim();
         if (userText === "") return;
-
+    
         appendMessage("user", userText);
         userInput.value = "";
-
-        setTimeout(() => {
-            let botResponse = generateBotResponse(userText);
+    
+        try {
+            let botResponse = await generateBotResponse(userText);
             appendMessage("bot", botResponse);
-        }, 1000);
+        } catch (error) {
+            appendMessage("bot", "Sorry, I couldn't fetch a response. Try again later.");
+            console.error("Error fetching bot response:", error);
+        }
     }
-
     // Bot response logic
     async function generateBotResponse(input) {
         const response = await fetch("/.netlify/functions/fetchResponse", {
