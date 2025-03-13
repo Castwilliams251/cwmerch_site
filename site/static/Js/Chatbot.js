@@ -54,14 +54,23 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     // Bot response logic
     async function generateBotResponse(input) {
-        const response = await fetch("/.netlify/functions/fetchResponse", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ input })
-        });
+        try {
+            const response = await fetch("/.netlify/functions/fetchResponse", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ userInput: input }) // Ensure it matches the expected key in fetchResponse.js
+            });
     
-        const data = await response.json();
-        return data.reply || "I'm not sure how to respond to that.";
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+    
+            const data = await response.json();
+            return data.botResponse || "I'm not sure how to respond to that.";
+        } catch (error) {
+            console.error("Error fetching bot response:", error);
+            return "Sorry, there was an issue fetching a response. Try again later.";
+        }
     }
     // Event listeners
     sendMessageButton.addEventListener("click", handleUserMessage);
