@@ -51,25 +51,16 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Bot response logic
-    function generateBotResponse(input) {
-        input = input.toLowerCase();
-
-        let responses = {
-            "hello": "Hi there! How can I assist you today?",
-            "who are you": "I'm an AI chatbot designed to entertain and assist you!",
-            "what can you do": "I can chat with you, provide information, and guide you through the website!",
-            "bye": "Goodbye! Come back soon!"
-        };
-
-        for (let key in responses) {
-            if (input.includes(key)) {
-                return responses[key];
-            }
-        }
-
-        return "I'm not sure how to respond to that. Try asking me something else!";
+    async function generateBotResponse(input) {
+        const response = await fetch("/.netlify/functions/fetchResponse", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ input })
+        });
+    
+        const data = await response.json();
+        return data.reply || "I'm not sure how to respond to that.";
     }
-
     // Event listeners
     sendMessageButton.addEventListener("click", handleUserMessage);
     userInput.addEventListener("keypress", function (e) {
