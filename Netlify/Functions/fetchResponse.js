@@ -1,18 +1,20 @@
 export async function handler(event, context) {
+    console.log("Function started");
+    console.log("Environment Token:", process.env.CWMerch_Token ? "Loaded" : "Missing");
+
     const API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1";
-    const API_TOKEN = process.env.CWMerch_Token; // Use an environment variable instead of hardcoding
+    const API_TOKEN = process.env.CWMerch_Token;
+
+    if (!API_TOKEN) {
+        return {
+            statusCode: 500,
+            body: JSON.stringify({ error: "API Token missing" }),
+        };
+    }
 
     try {
-        if (!event.body) {
-            throw new Error("No input received");
-        }
-
         const requestBody = JSON.parse(event.body);
-        const userMessage = requestBody.userInput || requestBody.input; // Ensure compatibility
-
-        if (!userMessage) {
-            throw new Error("Invalid input format");
-        }
+        console.log("User Input:", requestBody.input);
 
         const response = await fetch(API_URL, {
             method: "POST",
@@ -21,16 +23,18 @@ export async function handler(event, context) {
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
-                inputs: userMessage,
+                inputs: requestBody.input,
                 parameters: { max_new_tokens: 50 }
             })
         });
 
         if (!response.ok) {
-            throw new Error(`API Error: ${response.status}`);
+            console.log("API Error:", response.status);
+            throw new Error(`Hugging Face API Error: ${response.status}`);
         }
 
         const data = await response.json();
+        console.log("API Response:", data);
 
         return {
             statusCode: 200,
