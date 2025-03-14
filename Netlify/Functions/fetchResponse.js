@@ -11,7 +11,7 @@ export async function handler(event, context) {
             body: JSON.stringify({ error: "API Token missing" }),
         };
     }
-
+    
     try {
         const requestBody = JSON.parse(event.body);
         console.log("User Input:", requestBody.input);
