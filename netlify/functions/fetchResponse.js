@@ -1,4 +1,4 @@
-export async function handler(event, context) {
+exports.handler = async (event) => {
     console.log("Function started");
     console.log("Environment Token:", process.env.CWMerch_Token ? "Loaded" : "Missing");
 
