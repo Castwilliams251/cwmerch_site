@@ -1,10 +1,18 @@
 export async function handler(event, context) {
     const API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1";
-    const API_TOKEN = "CWMerch_Token"; // Your token is directly included here
+    const API_TOKEN = process.env.CWMerch_Token; // Use an environment variable instead of hardcoding
 
     try {
+        if (!event.body) {
+            throw new Error("No input received");
+        }
+
         const requestBody = JSON.parse(event.body);
-        const userMessage = requestBody.input;
+        const userMessage = requestBody.userInput || requestBody.input; // Ensure compatibility
+
+        if (!userMessage) {
+            throw new Error("Invalid input format");
+        }
 
         const response = await fetch(API_URL, {
             method: "POST",
@@ -18,6 +26,10 @@ export async function handler(event, context) {
             })
         });
 
+        if (!response.ok) {
+            throw new Error(`API Error: ${response.status}`);
+        }
+
         const data = await response.json();
 
         return {
@@ -25,6 +37,8 @@ export async function handler(event, context) {
             body: JSON.stringify({ reply: data[0]?.generated_text || "Sorry, I didn't understand that." }),
         };
     } catch (error) {
+        console.error("Error in fetchResponse:", error);
+
         return {
             statusCode: 500,
             body: JSON.stringify({ error: "Failed to fetch response", details: error.message }),
