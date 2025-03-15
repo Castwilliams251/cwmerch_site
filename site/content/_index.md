@@ -12,10 +12,10 @@ intro:
   text: This isnt just another website this is a digital experience! Our AI is designed to interact dynamically, adapt to conversations, and keep things fun, engaging, and unpredictable. No scripts, just pure AI-powered entertainment.
 
 products:
-  - image: img/ai-avatar.svg
+  - image: img/ai-avatar.png
     text: Our AI doesnt just answer questions it creates experiences. Whether you need a virtual companion, a game partner, or someone to challenge your thoughts, its got you covered!
 
-  - image: img/interactive-chat.svg
+  - image: img/interactive-chat.png
     text: Jump into an interactive chat and see for yourself. Test its wit, explore different moods, and let it surprise you. Ready for a new kind of conversation?
 
 values:
