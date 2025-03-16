@@ -10,4 +10,17 @@
 
 {{ partial "blog" . }}
 
+<!-- Chatbot HTML structure -->
+<div id="chatbot-container">
+    <div id="chatbot-header">
+        Chatbot
+        <span id="close-chatbot">x</span>
+    </div>
+    <div id="chatbot-body"></div>
+    <div id="chatbot-input">
+        <input type="text" id="user-input" placeholder="Type a message..." />
+        <button id="send-message">Send</button>
+    </div>
+</div>
+
 {{ end }}
